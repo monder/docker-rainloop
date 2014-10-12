@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV SHELL /bin/bash
 
 # Curl extension
-RUN apt-get update && apt-get install -y nginx php5-fpm php5-curl
+RUN apt-get update && apt-get install -y nginx php5-fpm php5-curl php5-pgsql php5-mysql
 
 # Adding files
 ADD . /docker
